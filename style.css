@@ -54,7 +54,7 @@ section{
     line-height: 2em; /*espaçamento entre as linhas*/
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw; /*3.5% do tamanho da largura da tela*/
+    font-size: 4vw; /*4% do tamanho da largura da tela*/
 }
 
 section > p {
