@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:"Passion One", sans-serif; /*titulos*/
+    --fonte3:"Sriracha", cursive; /*conteudo*/
+}
+
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+
+html, body{
+    min-height: 100vh; /*tamanho minimo do corpo*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 { /*o H1 do header*/
+    padding-top: 50px; /*padding que fica acima do texto Cordel Moderno do cabeçalho*/
+    /*text-transform: uppercase; para deixar tudo em maiusculo*/
+    font-variant: small-caps; /*deixa em tudo maiuculo, podem as primeiras letras ficam maiores*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*10% da largura da tela*/
+}
+
+header > p {
+    padding-bottom: 50px; /*muda o tamanho do padding abaixo do texto do cabeçalho*/
+}  
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder; /*deixa o texto do link do cabeçalho e do rodape em negrito*/
+
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /*para deixar um underline quando passar o mouse por cima do link do cabeçalho e rodape*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento entre as linhas*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /*3.5% do tamanho da largura da tela*/
+}
+
+section > p {
+    padding-bottom: 2em; /*criou o espaço entre os paragrafos*/
+}
+
+section.normal{ /*section da class normal*/
+    background-color: white;
+    color: rgb(87, 83, 83);
+}
+
+section.imagem{
+    background-color: rgb(54, 53, 53);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.555); /*inset = sombra pra dentro*/
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block; /*cria a caixa que se adapta ao tamanho do conteudo*/
+    background-color: rgba(7, 7, 7, 0.678);
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section#img01{ /*configurando os itens marcados com id*/
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover; /*deixa a imagem ocupando todo o espaço visivel */
+}
+
+section#img02{ /*configurando os itens marcados com id*/
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
